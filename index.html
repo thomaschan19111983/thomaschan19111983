@@ -1,61 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 20px;
-            background-color: white;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #35424a;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My First Webpage</h1>
-    </header>
-    
-    <main>
-        <h2>About Me</h2>
-        <p>Hello! I'm learning HTML and this is my first webpage. I'm excited to share my journey in web development with you.</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                background-color: #ffd1dc;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            h1, h2 {
+                color: #ff4d88;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+            
+            .details {
+                background-color: white;
+                padding: 20px;
+                border-radius: 15px;
+                margin: 20px auto;
+                width: 80%;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            
+            .party-pics {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+            }
+            
+            .party-pics img {
+                width: 200px;
+                border-radius: 10px;
+                border: 5px solid white;
+            }
+            
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            li {
+                margin: 10px 0;
+            }
+            
+            .rsvp-button {
+                background-color: #ff4d88;
+                color: white;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 25px;
+                font-size: 18px;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: transform 0.3s;
+            }
+            
+            .rsvp-button:hover {
+                transform: scale(1.1);
+            }
+            
+            .guest-list {
+                background-color: #fff8f9;
+                padding: 15px;
+                border-radius: 10px;
+                margin: 20px auto;
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
         
-        <h2>My Hobbies</h2>
-        <ul>
-            <li>Reading books</li>
-            <li>Playing guitar</li>
-            <li>Hiking</li>
-        </ul>
+        <h1>You're invited!</h1>
+        <h2>To Teddy's 6th Birthday Party! 🎈</h2>
         
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at: <a href="mailto:example@email.com">example@email.com</a></p>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My First Webpage. All rights reserved.</p>
-    </footer>
-</body>
+        <img class="teddy-pic" src="https://i.pinimg.com/736x/7d/c7/dc/7dc7dccb8fc340ce7027e8c93ee13f2b.jpg" alt="Teddy Bear">
+        
+        <div class="details">
+            <p><strong>The details:</strong></p>
+            <ul>
+                <li>📅 Date: February 14th, 2025</li>
+                <li>🏛️ Location: White House, Washington D.C, USA</li>
+                <li>⏰ Time: 5:00 PM</li>
+                <li>📝 Details: Guests are welcome to enter at 5pm. Snacks and drinks will be provided. The party starts at 7pm</li>
+            </ul>
+        </div>
+        
+        <div class="guest-list">
+            <h3>Special Guests</h3>
+            <ul>
+                <li>🐻 Paddington Bear</li>
+                <li>😺 Hello Kitty</li>
+                <li>🐰 Miffy</li>
+                <li>🖤 Kuromi</li>
+                <li>🐱🐭 Tom and Jerry</li>
+            </ul>
+        </div>
+        
+        <div class="party-pics">
+            <img src="https://www.kasandbox.org/programming-images/seasonal/xmas-tree-lit.png" alt="Party decoration 1">
+            <img src="https://www.kasandbox.org/programming-images/seasonal/gingerbread-house.png" alt="Party decoration 2">
+            <img src="https://www.kasandbox.org/programming-images/seasonal/presents.png" alt="Party decoration 3">
+        </div>
+        
+        <button class="rsvp-button">RSVP NOW!</button>
+        
+    </body>
 </html>
+
